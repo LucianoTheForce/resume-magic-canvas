@@ -1,69 +1,99 @@
-# Welcome to your Lovable project
+![Reactive Resume](https://i.imgur.com/FFc4nyZ.jpg)
 
-## Project info
+![App Version](https://img.shields.io/github/package-json/version/AmruthPillai/Reactive-Resume?label=version)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amruthpillai/reactive-resume)](https://hub.docker.com/repository/docker/amruthpillai/reactive-resume)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/AmruthPillai)](https://github.com/sponsors/AmruthPillai)
+[![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://crowdin.com/project/reactive-resume)
+[![Discord](https://img.shields.io/discord/1173518977851473940?label=discord&link=https%3A%2F%2Fdiscord.gg%2FhzwkZbyvUW)](https://discord.gg/hzwkZbyvUW)
 
-**URL**: https://lovable.dev/projects/957c47ed-4bcb-4c92-8b13-c4861db4f34d
+# Reactive Resume
 
-## How can I edit this code?
+A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.
 
-There are several ways of editing your application.
+### [Go to App](https://rxresu.me/) | [Docs](https://docs.rxresu.me/)
 
-**Use Lovable**
+## Description
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/957c47ed-4bcb-4c92-8b13-c4861db4f34d) and start prompting.
+Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume. With zero user tracking or advertising, your privacy is a top priority. The platform is extremely user-friendly and can be self-hosted in less than 30 seconds if you wish to own your data completely.
 
-Changes made via Lovable will be committed automatically to this repo.
+It's available in multiple languages and comes packed with features such as real-time editing, dozens of templates, drag-and-drop customisation, and integration with OpenAI for enhancing your writing.
 
-**Use your preferred IDE**
+You can share a personalised link of your resume to potential employers, track its views or downloads, and customise your page layout by dragging-and-dropping sections. The platform also supports various font options and provides dozens of templates to choose from. And yes, there's even a dark mode for a more comfortable viewing experience.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Start creating your standout resume with Reactive Resume today!
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Templates
 
-Follow these steps:
+| Azurill                                                      | Bronzor                                                     | Chikorita                                                   |
+| ------------------------------------------------------------ | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| <img src="https://i.imgur.com/jKgo04C.jpeg" width="200px" /> | <img src="https://i.imgur.com/DFNQZP2.jpg" width="200px" /> | <img src="https://i.imgur.com/Dwv8Y7f.jpg" width="200px" /> |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Ditto                                                       | Kakuna                                                      | Nosepass                                                    |
+| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| <img src="https://i.imgur.com/6c5lASL.jpg" width="200px" /> | <img src="https://i.imgur.com/268ML3t.jpg" width="200px" /> | <img src="https://i.imgur.com/npRLsPS.jpg" width="200px" /> |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Onyx                                                        | Pikachu                                                     | Rhyhorn                                                     |
+| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| <img src="https://i.imgur.com/cxplXOW.jpg" width="200px" /> | <img src="https://i.imgur.com/Y9f7qsh.jpg" width="200px" /> | <img src="https://i.imgur.com/h4kQxy2.jpg" width="200px" /> |
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Features
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Free, forever** and open-source
+- No telemetry, user tracking or advertising
+- You can self-host the application in less than 30 seconds
+- **Available in multiple languages** ([help add/improve your language here](https://translate.rxresu.me/))
+- Use your email address (or a throw-away address, no problem) to create an account
+- You can also sign in with your GitHub or Google account, and even set up two-factor authentication for extra security
+- Create as many resumes as you like under a single account, optimising each resume for every job application based on its description for a higher ATS score
+- **Bring your own OpenAI API key** and unlock features such as improving your writing, fixing spelling and grammar or changing the tone of your text in one-click
+- Translate your resume into any language using ChatGPT and import it back for easier editing
+- Create single page resumes or a resume that spans multiple pages easily
+- Customize the colours and layouts to add a personal touch to your resume.
+- Customise your page layout as you like just by dragging-and-dropping sections
+- Create custom sections that are specific to your industry if the existing ones don't fit
+- Jot down personal notes specific to your resume that's only visible to you
+- Lock a resume to prevent making any further edits (useful for master templates)
+- **Dozens of templates** to choose from, ranging from professional to modern
+- Design your resume using the standardised EuroPass design template
+- Supports printing resumes in A4 or Letter page formats
+- Design your resume with any font that's available on [Google Fonts](https://fonts.google.com/)
+- **Share a personalised link of your resume** to companies or recruiters for them to get the latest updates
+- You can track the number of views or downloads your public resume has received
+- Built with state-of-the-art (at the moment) and dependable technologies that's battle tested and peer reviewed by the open-source community on GitHub
+- **MIT License**, so do what you like with the code as long as you credit the original author
+- And yes, there’s a dark mode too 🌓
 
-**Edit a file directly in GitHub**
+## Built With
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- React (Vite), for the frontend
+- NestJS, for the backend
+- Postgres (primary database)
+- Prisma ORM, which frees you to switch to any other relational database with a few minor changes in the code
+- Minio (for object storage: to store avatars, resume PDFs and previews)
+- Browserless (for headless chrome, to print PDFs and generate previews)
+- SMTP Server (to send password recovery emails)
+- GitHub/Google OAuth (for quickly authenticating users)
+- LinguiJS and Crowdin (for translation management and localization)
 
-**Use GitHub Codespaces**
+## Star History
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<a href="https://star-history.com/#AmruthPillai/Reactive-Resume&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
+  </picture>
+</a>
 
-## What technologies are used for this project?
+## License
 
-This project is built with .
+Reactive Resume is packaged and distributed using the [MIT License](/LICENSE.md) which allows for commercial use, distribution, modification and private use provided that all copies of the software contain the same license and copyright.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+_By the community, for the community._  
+A passion project by [Amruth Pillai](https://www.amruthpillai.com/)
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/957c47ed-4bcb-4c92-8b13-c4861db4f34d) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+<p>
+  <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=Reactive-Resume">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="200px">
+  </a>
+</p>
